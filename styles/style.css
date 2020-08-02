@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+@import url('../assets/fonts/AlfridaDemoSignature.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap');
 body{
     font: "normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif";
+}
+#signature{
+  font-family: 'Alfrida Signature','Dancing Script', cursive;
 }
 .nav-link{
     color: #000;
