@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
 body{
-    font: normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;;
+    font: "normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif";
 }
 .nav-link{
     color: #000;
@@ -24,10 +25,10 @@ body{
     height: 34vh;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992 px) {
     .project{
         width: 100%;
-        height: 40vh;
+        height: 35vh;
     }
     .project-image{
         position: relative;
@@ -41,7 +42,10 @@ body{
     overflow: hidden;
 }
 
-
+.project-container{
+  display: flex;
+  align-items: center;
+}
 .project:hover .project-name{
     opacity: 1;
 }
@@ -150,11 +154,12 @@ footer{
     letter-spacing: 0.3px;
   }
   .btn.btn-accent {
-    background: #2fbfbc;
-    color: white;
+    background: #ddccdd;
+    color: black;
   }
   .btn.btn-accent:hover {
     background: #269694;
+    color: #fff;
   }
   .ct-newsletter-section .container {
     width: 100%;
@@ -279,3 +284,88 @@ footer{
       padding-left: 110px;
     }
   }
+
+/* VR tour*/
+
+.vr-element{
+  height: 483px;
+  width: 100%;
+}
+
+/* project desc*/
+
+#carouselExampleControls{
+  height: 75vh;
+}
+
+.carousel-inner{
+  height: 100%;
+  overflow: hidden;
+}
+
+.under-carousel{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Jura', sans-serif;
+  margin-top: 10px;
+}
+
+.under-carousel h1{
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: .15em;
+}
+.under-carousel div{
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+  font-size: 20px;
+}
+.under-carousel span{
+  font-size: 22px;
+}
+.under-carousel a{
+  color: #000;
+}
+@media (max-width: 992px){
+  #carouselExampleControls{
+    height: 50vh;
+  }
+  .under-carousel h1{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: .15em;
+  }
+  .under-carousel div{
+    width: 20%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 414px){
+  #carouselExampleControls{
+    height: 25vh;
+  }
+  .under-carousel h1{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .15em;
+  }
+  .under-carousel div{
+    width: 50%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px){
+  #carouselExampleControls{
+    height: 25vh;
+  }
+  .under-carousel h1{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .15em;
+  }
+  .under-carousel div{
+    width: 50%;
+    font-size: 14px;
+  }
+}
