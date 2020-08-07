@@ -23,9 +23,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-  
+
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/beverly.css">
   <link rel="icon" href="assets/Logo.png">
@@ -64,61 +64,97 @@
     </div>
   </nav>
 
-  <main class="container mt-3 pl-5 pr-5">
+  <main class="container mt-3 pl-2 pr-2">
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active slides">
-          <div class="d-block w-100 h-100 project1">
-
-          </div>
-        </div>
-        <div class="carousel-item slides">
-          <div class="d-block w-100 h-100 project2">
-
-          </div>
-        </div>
-        <div class="carousel-item slides">
-          <div class="d-block w-100 h-100 project3">
-
-          </div>
-        </div>
-        <div class="carousel-item slides">
-          <div class="d-block w-100 h-100 project4">
-
-          </div>
-        </div>
-        <div class="carousel-item slides">
-          <div class="d-block w-100 h-100 project5">
-
-          </div>
-        </div>
-        <div class="carousel-item slides">
-          <div class="d-block w-100 h-100 project6">
-
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+    <div id="carouselExampleControls" class="carousel slide row" data-ride="carousel">
+      <div class="col-xs-12 col-md-2 order-sm-12 order-md-1 h-100 d-none d-md-block d-sm-none">
+        <ol class="carousel-indicators d-flex flex-md-column h-100 mr-0">
+          <li data-target="#carouselExampleControls" data-slide-to="0" class="active">
+            <div class="thumbnail">
+              <img class="img-fluid" src="/assets/beverlyhills/Living 1.jpg">
+            </div>
+          </li>
+          <li data-target="#carouselExampleControls" data-slide-to="1">
+            <div class="thumbnail">
+              <img class="img-fluid" src="/assets/beverlyhills/lounge_02_PS_T.tif.png">
+            </div>
+          </li>
+          <li data-target="#carouselExampleControls" data-slide-to="2">
+            <div class="thumbnail">
+              <img class="img-fluid" src="/assets/beverlyhills/salon_F_03_p.png">
+            </div>
+          </li>
+          <li data-target="#carouselExampleControls" data-slide-to="3">
+            <div class="thumbnail">
+              <img class="img-fluid" src="/assets/beverlyhills/04_Kitchen_edited.jpg">
+            </div>
+          </li>
+          <li data-target="#carouselExampleControls" data-slide-to="4">
+            <div class="thumbnail">
+              <img class="img-fluid" src="/assets/beverlyhills/002_Sunset Patio.png">
+            </div>
+          </li>
+          <li data-target="#carouselExampleControls" data-slide-to="5">
+            <div class="thumbnail">
+              <img class="img-fluid" src="/assets/beverlyhills/001_ps Patio.png">
+            </div>
+          </li>
+        </ol>
       </div>
-    </div>
-    <div class="under-carousel">
-      <h1>
-        Beverly hills
-      </h1>
-      <div>
-        <p>
-          Next project
-        </p>
-        <a href="hawaii.html">
-          <span class="fa fa-arrow-circle-o-right"></span>
-        </a>
+      <div class="col-xs-12 col-md-10 order-xs-1 order-md-2 h-100">
+        <div class="carousel-inner">
+          <div class="carousel-item active slides">
+            <div class="d-block w-100 h-100 project1">
+
+            </div>
+          </div>
+          <div class="carousel-item slides">
+            <div class="d-block w-100 h-100 project2">
+
+            </div>
+          </div>
+          <div class="carousel-item slides">
+            <div class="d-block w-100 h-100 project3">
+
+            </div>
+          </div>
+          <div class="carousel-item slides">
+            <div class="d-block w-100 h-100 project4">
+
+            </div>
+          </div>
+          <div class="carousel-item slides">
+            <div class="d-block w-100 h-100 project5">
+
+            </div>
+          </div>
+          <div class="carousel-item slides">
+            <div class="d-block w-100 h-100 project6">
+
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="under-carousel">
+          <h1>
+            Beverly hills
+          </h1>
+          <div>
+            <p>
+              Next project
+            </p>
+            <a href="hawaii.html">
+              <span class="fa fa-arrow-circle-o-right"></span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </main>

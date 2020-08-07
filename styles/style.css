@@ -26,10 +26,6 @@ body{
     color: #000;
 }
 
-.project{
-    width: 100%;
-    height: 34vh;
-}
 @media screen and (min-width: 768px) {
   .project{
       width: 100%;
@@ -51,7 +47,7 @@ body{
 @media screen and (min-width: 1200px) {
     .project{
         width: 100%;
-        height: 40vh;
+        height: 34vh;
     }
   }
 .project-container{
@@ -336,7 +332,6 @@ footer{
 .under-carousel{
   display: flex;
   justify-content: space-between;
-  font-family: 'Jura', sans-serif;
   margin-top: 10px;
 }
 
@@ -352,7 +347,7 @@ footer{
   font-size: 20px;
 }
 .under-carousel span{
-  font-size: 22px;
+  font-size: 17px;
 }
 .under-carousel a{
   color: #000;
@@ -398,4 +393,77 @@ footer{
     width: 50%;
     font-size: 14px;
   }
+}
+/* CAROUSEL INDICATORS */
+#carouselExampleControls .carousel-indicators li,
+#carouselExampleControls .carousel-indicators li.active {
+  width: 100%;
+  height: auto;
+  max-height: 102px;
+  text-indent:0;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+#carouselExampleControls .carousel-indicators{
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#carouselExampleControls .carousel-indicators li.active {
+  transform: scale(1.2);
+}
+#carouselExampleControls .carousel-indicators li > .thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  overflow: hidden;
+  
+  opacity: 1;
+  display: block;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  transition: all 550ms ease-out;
+}
+#carouselExampleControls .carousel-indicators li:hover > .thumbnail,
+#carouselExampleControls .carousel-indicators li.active > .thumbnail:hover {
+  position: relative;
+  display: block;
+  border: 1px solid white;
+  opacity: 1;
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1440px) {
+}
+
+
+#carouselExampleControls .carousel-indicators::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#carouselExampleControls .carousel-indicators::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: #F5F5F5;
+}
+
+#carouselExampleControls .carousel-indicators::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
 }
